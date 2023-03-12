@@ -1,6 +1,6 @@
 <template>
-    <div id="panduan-pengajuan-layanan" class="px-6 mt-10">
-        <h2 class="mb-6 font-bold"><span class="text-secondary">Panduan</span> Pengajuan Layanan</h2>
+    <div id="panduan-pengajuan-layanan" class="px-6 lg:px-40 mt-12">
+        <h1 class="mb-6 font-bold text-2xl"><span class="text-secondary">Panduan</span> Pengajuan Layanan</h1>
 
         <ol class="relative border-l border-gray-300 mx-2">
             <li class="mb-6 ml-4">
