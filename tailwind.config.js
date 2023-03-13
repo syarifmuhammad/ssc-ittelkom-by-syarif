@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         'secondary': '#AA0000',
         'border-secondary': 'rgb(218, 15, 15)',
+        'border-default': '#d1d1d1',
       },
       backgroundImage: {
         'hero-mobile': "url('./src/assets/img/slider-6-mobile.png')",
