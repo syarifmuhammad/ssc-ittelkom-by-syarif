@@ -1,6 +1,6 @@
 <template>
     <header
-        class="w-full h-[85px] lg:h-[100px] bg-white z-50 px-6 lg:px-0 lg:mx-40 flex items-center justify-between shadow-md lg:shadow-none fixed top-0 lg:static lg:w-auto lg:border-b">
+        class="w-full h-[85px] lg:h-[100px] bg-white z-50 px-6 lg:px-0 xl:mx-36 lg:mx-20 flex items-center justify-between shadow-md lg:shadow-none fixed top-0 lg:static lg:w-auto lg:border-b">
         <img class="w-[100px]" src="@/assets/img/logo-basic.png" />
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6">
