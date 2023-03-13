@@ -14,6 +14,10 @@ module.exports = {
       backgroundImage: {
         'hero-mobile': "url('./src/assets/img/slider-6-mobile.png')",
       },
+      fontFamily: {
+        'lato': ['Lato', 'sans-serif'],
+        'quicksand': ['Quicksand', 'Spartan', 'sans-serif'],
+      }
     },
   },
   plugins: [],
