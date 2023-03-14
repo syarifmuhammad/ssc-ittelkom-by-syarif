@@ -47,7 +47,7 @@
                 Student
                 Service
                 Center</p>
-            <p class="font-lato text-sm font-normal text-[#8e8e90]"><a class="text-secondary font-lato"
+            <p class="font-lato text-sm font-normal text-[#8e8e90]"><a class="text-secondary font-lato hover:text-[#da0f0f]"
                     href="https://ittelkom-sby.ac.id/">IT Telkom
                     Surabaya</a>.
                 All rights

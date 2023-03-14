@@ -14,7 +14,7 @@
                     </h1>
                     <p class="mt-[17px] text-[#465b52] font-lato text-[15px] font-normal">Datang. Buat Tiket. Proses.</p>
                     <button
-                        class="bg-secondary text-white border-border-secondary rounded px-[30px] py-3 mt-[22px] text-sm font-bold font-lato">Lihat
+                        class="bg-secondary text-white border-border-secondary rounded px-[30px] py-3 mt-[22px] text-sm font-bold font-lato transition duration-300 hover:bg-[#da0f0f]">Lihat
                         Layanan</button>
                 </div>
                 <img class="hidden lg:inline xl:max-h-[450px] lg:max-h-[350px] rounded-2xl" src="@/assets/img/slider-6.png"

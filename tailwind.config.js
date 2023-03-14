@@ -17,6 +17,10 @@ module.exports = {
       fontFamily: {
         'lato': ['Lato', 'sans-serif'],
         'quicksand': ['Quicksand', 'Spartan', 'sans-serif'],
+      },
+      zIndex: {
+        '60': '60',
+        '70': '70',
       }
     },
   },

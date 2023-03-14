@@ -44,7 +44,9 @@
                 </div>
             </slide>
         </carousel>
-        <component :is="active_slide"></component>
+        <Transition mode="out-in">
+            <component :is="active_slide"></component>
+        </Transition>
     </section>
 </template>
 <script>
@@ -58,6 +60,7 @@ import Keuangan from "./kategori_layanan/Keuangan.vue"
 import PusatBahasaDanPerpustakaan from "./kategori_layanan/PusatBahasaDanPerpustakaan.vue"
 import Ftib from "./kategori_layanan/Ftib.vue"
 import Fteic from "./kategori_layanan/Fteic.vue"
+import { markRaw } from "vue";
 export default {
     name: "KategoriLayanan",
     components: {
@@ -66,10 +69,10 @@ export default {
     },
     data() {
         return {
-            active_slide: LayananAkademik,
+            active_slide: markRaw(LayananAkademik),
             slider_items1: [
                 {
-                    component: LayananAkademik,
+                    component: markRaw(LayananAkademik),
                     title: "Akademik",
                     icon: "https://cdn.lordicon.com/wxnxiano.json",
                     color: {
@@ -78,7 +81,7 @@ export default {
                     }
                 },
                 {
-                    component: Puti,
+                    component: markRaw(Puti),
                     title: "PuTi",
                     icon: "https://cdn.lordicon.com/qhgmphtg.json",
                     color: {
@@ -87,7 +90,7 @@ export default {
                     }
                 },
                 {
-                    component: Kemahasiswaan,
+                    component: markRaw(Kemahasiswaan),
                     title: "Kemahasiswaan",
                     icon: "https://cdn.lordicon.com/uukerzzv.json",
                     color: {
@@ -96,7 +99,7 @@ export default {
                     }
                 },
                 {
-                    component: Logistik,
+                    component: markRaw(Logistik),
                     title: "Logistik",
                     icon: "https://cdn.lordicon.com/sbiheqdr.json",
                     color: {
@@ -107,7 +110,7 @@ export default {
             ],
             slider_items2: [
                 {
-                    component: Keuangan,
+                    component: markRaw(Keuangan),
                     title: "Keuangan",
                     icon: "https://cdn.lordicon.com/vaeagfzc.json",
                     color: {
@@ -116,7 +119,7 @@ export default {
                     }
                 },
                 {
-                    component: PusatBahasaDanPerpustakaan,
+                    component: markRaw(PusatBahasaDanPerpustakaan),
                     title: "Pusat Bahasa & Perpustakaan",
                     icon: "https://cdn.lordicon.com/gdjyhaga.json",
                     color: {
@@ -125,7 +128,7 @@ export default {
                     }
                 },
                 {
-                    component: Ftib,
+                    component: markRaw(Ftib),
                     title: "FTIB",
                     icon: "https://cdn.lordicon.com/nobciafz.json",
                     color: {
@@ -134,7 +137,7 @@ export default {
                     }
                 },
                 {
-                    component: Fteic,
+                    component: markRaw(Fteic),
                     title: "FTEIC",
                     icon: "https://cdn.lordicon.com/ckuogwdx.json",
                     color: {
@@ -192,5 +195,21 @@ h2 {
 
 .carousel__slide {
     align-items: stretch;
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: transform .5s ease, opacity .5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+.v-enter-to,
+.v-leave-from {
+    opacity: 1;
 }
 </style>

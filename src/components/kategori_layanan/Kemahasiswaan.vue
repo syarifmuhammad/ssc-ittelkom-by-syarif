@@ -1,20 +1,28 @@
 <template>
-    <section class="mt-[5.625rem]">
-        <div class="w-1/2 min-h-[4rem] flex mb-5">
-            <div class="bg-secondary h-[1.2rem] min-w-[42px] w-[11%] rounded-[0.3rem] mr-[7%] mt-[.5%]"></div>
-            <h1 class="mb-6 text-[26px] text-secondary">
-                PuTi
-            </h1>
-        </div>
-        <tabs :tab_lists="tab_lists"></tabs>
-    </section>
+    <div>
+        <section class="mt-[5.625rem]">
+            <div class="w-1/2 min-h-[4rem] flex mb-5">
+                <div class="bg-secondary h-[1.2rem] min-w-[42px] w-[11%] rounded-[0.3rem] mr-[7%] mt-[.5%]"></div>
+                <h1 class="mb-6 text-[26px] text-secondary">
+                    PuTi
+                </h1>
+            </div>
+            <tabs :tab_lists="tab_lists"></tabs>
+        </section>
+        <informasi v-bind="informasi">
+            Merupakan unit yang bertugas mengelola administrasi kemahasiswaan yang mencakup kegiatan layanan administrasi
+            kemahasiswaan, pusat bahasa, dan perpustakaan. Informasi lengkap mengenai Unit Kemahasiswaan, silakan kunjungi:
+        </informasi>
+    </div>
 </template>
 <script>
 import Tabs from "../Tabs.vue"
+import Informasi from "./Informasi.vue"
 export default {
     name: "Kemahasiswaan",
     components: {
         Tabs,
+        Informasi,
     },
     data() {
         return {
@@ -62,6 +70,18 @@ export default {
                     description: "Layanan terkait pelaksanaan pengajuan klaim & asuransi kesehatan mahasiswa.",
                 },
             ],
+            informasi: {
+                title: "Informasi Kemahasiswaan",
+                img: "https://ssc.ittelkom-sby.ac.id/assets-home/imgs/banner/device-kemahasiswaan.png",
+                link_instagram: {
+                    link: 'https://www.instagram.com/kemahasiswaanitts/',
+                    title: 'kemahasiswaanitts'
+                },
+                link_website: {
+                    link: 'https://www.instagram.com/kemahasiswaan.ittelkomsby/',
+                    title: 'https://www.instagram.com/kemahasiswaan.ittelkomsby/'
+                }
+            }
         }
     }
 }
